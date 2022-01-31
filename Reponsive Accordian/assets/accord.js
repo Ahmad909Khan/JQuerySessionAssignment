@@ -20,14 +20,24 @@ aut assumenda sunt exercitationem?
 
 `
 $(document).ready(function () {
+    $(".resContent").hide();
     $("#content").text(textA)
     $("#btn1").click(function () {
+        if($("#content").text() == textA){
+            $("#content").toggle();
+        }
         $("#content").text(textA);
     });
     $("#btn2").click(function () {
+        if($("#content").text() == textB){
+            $("#content").toggle();
+        }
         $("#content").text(textB);
     });
     $("#btn3").click(function () {
+        if($("#content").text() == textC){
+            $("#content").toggle();
+        }
         $("#content").text(textC);
     });
     $(window).resize(function () {
