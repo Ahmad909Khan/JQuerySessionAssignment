@@ -19,32 +19,33 @@ voluptates atque saepe aliquid accusantium voluptatum, ipsam iure iste adipisci 
 aut assumenda sunt exercitationem?
 
 `
+content = $('#content')
 $(document).ready(function () {
     $(".resContent").hide();
-    $("#content").text(textA)
+    content.text(textA)
     $("#btn1").click(function () {
-        if($("#content").text() == textA){
-            $("#content").toggle();
-        }
-        $("#content").text(textA);
+        if(content.text() == textA){
+            content.toggle();
+        }else content.show();
+        content.text(textA);
     });
     $("#btn2").click(function () {
-        if($("#content").text() == textB){
-            $("#content").toggle();
-        }
-        $("#content").text(textB);
+        if(content.text() == textB){
+            content.toggle();
+        }else content.show();
+        content.text(textB);
     });
     $("#btn3").click(function () {
-        if($("#content").text() == textC){
-            $("#content").toggle();
-        }
-        $("#content").text(textC);
+        if(content.text() == textC){
+            content.toggle();
+        }else content.show();
+        content.text(textC);
     });
     $(window).resize(function () {
+        $("#contentdiv").hide();
+        $(".resContent").show();
         if(window.innerWidth < 768){
-            $("#contentdiv").hide();
-            $(".resContent").show();
-            $("#btn1, #btn2, #btn3").addClass("form-control");
+            $("#btn1, #btn2, #btn3").addClass("w-75");
             $("#btn1").click(function () {
                 $("#resContent1").toggle().text(textA);
             });
@@ -58,7 +59,7 @@ $(document).ready(function () {
         if(window.innerWidth > 768){
             $(".resContent").hide();
             $("#contentdiv").show();
-            $("#btn1, #btn2, #btn3").removeClass("form-control");
+            $("#btn1, #btn2, #btn3").removeClass("w-75");
         }
     })
 })
