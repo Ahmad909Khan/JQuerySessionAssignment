@@ -4,3 +4,12 @@ i, img{
 img{
     width: 300px;
 }
+.pop-up{
+    width: fit-content;
+    height: fit-content;
+}
+.fa-times{
+    position: fixed;
+    right: 10px;
+    top: 10px;
+}

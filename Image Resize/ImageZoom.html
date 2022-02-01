@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,20 +11,20 @@
     <link rel="stylesheet" href="assets/css/imgzoom.css">
     <title>Image Resize</title>
 </head>
+
 <body class="bg-secondary my-5 text-center">
     <div id="img-container">
         <img id="main-image" src="assets/img/Magnolia.jpg" alt="zooming_image">
     </div>
-    <div class="pop-up bg-dark pb-5 mx-5">
-        <div class="mx-auto">
-            <div class="p-5 text-light">
-                <i class="fa fa-plus fa-3x mx-5 text-success"></i>
-                <i class="fa fa-minus fa-3x mx-5 text-info"></i>
-                <i class="fa fa-times fa-lg float-right text-warning"></i>
-            </div>
-            <img id="zoom-image" src="assets/img/Magnolia.jpg" alt="zooming_image">
+    <div class="pop-up bg-dark p-5 mx-5 mx-auto">
+        <div>
+            <i class="fa fa-plus fa-3x mx-4 p-3 text-success"></i>
+            <i class="fa fa-minus fa-3x mx-4 p-3 text-info"></i>
+            <i class="fa fa-times fa-lg text-warning p-3"></i>
         </div>
+        <img id="zoom-image" src="assets/img/Magnolia.jpg" alt="zooming_image">
     </div>
     <script src="assets/js/imgzoom.js"></script>
 </body>
+
 </html>
