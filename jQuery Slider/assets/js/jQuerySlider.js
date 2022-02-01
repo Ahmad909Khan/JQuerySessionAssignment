@@ -1,23 +1,15 @@
-var len = $('.slider');
-console.log(len);
 $('#1').click(function () {
-    $('#slider2').slideUp(300, function () {
-        $('#slider3').slideUp(300, function () {
-            $('#slider1').slideDown(300);
-        });
-    });
+    $('#slider2').finish().slideUp();
+    $('#slider3').finish().slideUp();
+    $('#slider1').finish().slideDown();
 });
 $('#2').click(function () {
-    $('#slider1').slideUp(300, function () {
-        $('#slider3').slideUp(300, function () {
-            $('#slider2').slideDown(300);
-        });
-    });
+    $('#slider1').finish().slideUp()
+    $('#slider3').finish().slideUp()
+    $('#slider2').finish().slideDown();
 });
 $('#3').click(function () {
-    $('#slider1').slideUp(300, function () {
-        $('#slider2').slideUp(300, function () {
-            $('#slider3').slideDown(300);
-        });
-    });
+    $('#slider1').finish().slideUp();
+    $('#slider2').finish().slideUp()
+    $('#slider3').finish().slideDown();
 });
