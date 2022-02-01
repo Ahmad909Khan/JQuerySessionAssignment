@@ -1,23 +1,23 @@
 var len = $('.slider');
 console.log(len);
 $('#1').click(function () {
-    $('#slider2').fadeOut(600, function () {
-        $('#slider3').fadeOut(600, function () {
-            $('#slider1').fadeIn(600);
+    $('#slider2').slideUp(300, function () {
+        $('#slider3').slideUp(300, function () {
+            $('#slider1').slideDown(300);
         });
     });
 });
 $('#2').click(function () {
-    $('#slider1').fadeOut(600, function () {
-        $('#slider3').fadeOut(600, function () {
-            $('#slider2').fadeIn(600);
+    $('#slider1').slideUp(300, function () {
+        $('#slider3').slideUp(300, function () {
+            $('#slider2').slideDown(300);
         });
     });
 });
 $('#3').click(function () {
-    $('#slider1').fadeOut(600, function () {
-        $('#slider2').fadeOut(600, function () {
-            $('#slider3').fadeIn(600);
+    $('#slider1').slideUp(300, function () {
+        $('#slider2').slideUp(300, function () {
+            $('#slider3').slideDown(300);
         });
     });
 });
